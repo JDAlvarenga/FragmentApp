@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mass_units">Times the mass of Earth</string>
+    <string name="gravity_units">Times the gravity of Earth</string>
+
+    <string-array name="planet_names">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="planets_mass">
+        <item>333,000</item>
+        <item>0.0553</item>
+        <item>0.815</item>
+        <item>1</item>
+        <item>0.107</item>
+        <item>317.83</item>
+        <item>95.162</item>
+        <item>14.536</item>
+        <item>17.147</item>
+    </string-array>
+
+    <string-array name="planets_gravity">
+        <item>27.94</item>
+        <item>0.38</item>
+        <item>0.905</item>
+        <item>1</item>
+        <item>0.905</item>
+        <item>2.528</item>
+        <item>1.065</item>
+        <item>0.90</item>
+        <item>1.137</item>
+    </string-array>
+
+    <integer-array name="planet_images">
+        <item>@drawable/sun</item>
+        <item>@drawable/mercury</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/mars</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturn</item>
+        <item>@drawable/uranus</item>
+        <item>@drawable/neptune</item>
+    </integer-array>
+
+</resources>

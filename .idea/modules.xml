@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FragmentApp.iml" filepath="$PROJECT_DIR$/FragmentApp.iml" />
+      <module fileurl="file://C:\Users\Usuario\AndroidStudioProjects\PDM_L4_FragmentApp\FragmentApp.iml" filepath="C:\Users\Usuario\AndroidStudioProjects\PDM_L4_FragmentApp\FragmentApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDM_L4_FragmentApp.iml" filepath="$PROJECT_DIR$/PDM_L4_FragmentApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

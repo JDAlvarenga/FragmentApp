@@ -1,10 +1,12 @@
 package com.example.rafaj.fragmentapp;
 
 import android.app.Fragment;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,20 +15,31 @@ import android.widget.Toast;
  */
 
 public class FragmentViewer extends Fragment {
-    TextView text;
+    TextView txt_name, txt_mass, txt_gravity;
+    ImageView image;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.viewer_fragment, container, false);
 
-        text = view.findViewById(R.id.textId);
+        txt_name = view.findViewById(R.id.txt_name);
+        txt_mass = view.findViewById(R.id.txt_mass);
+        txt_gravity = view.findViewById(R.id.txt_gravity);
+        image = view.findViewById(R.id.img_planet);
+
         Bundle bundle = this.getArguments();
 
 
         if(bundle != null){
-            Toast.makeText(getActivity(), "Item: " + bundle.getString("KEY"), Toast.LENGTH_SHORT).show();
 
-            text.setText(bundle.getString("KEY"));
+            Planet planet = (Planet)(bundle.getSerializable(Planet.KEY_PLANET));
+            //Toast.makeText(getActivity(), "Planet: " + planet.getName(), Toast.LENGTH_SHORT).show();
+
+
+            txt_name.setText(planet.getName());
+            txt_mass.setText(planet.getMass() + "\n" + getResources().getString(R.string.mass_units));
+            txt_gravity.setText(planet.getTemp() + "\n" + getResources().getString(R.string.gravity_units));
+            image.setImageResource(planet.getPicture());
 
         }
 

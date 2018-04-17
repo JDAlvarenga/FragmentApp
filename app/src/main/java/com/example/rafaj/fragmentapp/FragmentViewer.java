@@ -1,14 +1,12 @@
 package com.example.rafaj.fragmentapp;
 
 import android.app.Fragment;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by rafaj on 8/4/2018.
@@ -38,7 +36,7 @@ public class FragmentViewer extends Fragment {
 
             txt_name.setText(planet.getName());
             txt_mass.setText(planet.getMass() + "\n" + getResources().getString(R.string.mass_units));
-            txt_gravity.setText(planet.getTemp() + "\n" + getResources().getString(R.string.gravity_units));
+            txt_gravity.setText(planet.getGravity() + "\n" + getResources().getString(R.string.gravity_units));
             image.setImageResource(planet.getPicture());
 
         }

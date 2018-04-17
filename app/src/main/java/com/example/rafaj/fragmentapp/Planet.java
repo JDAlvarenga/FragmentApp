@@ -9,15 +9,15 @@ import java.io.Serializable;
  */
 
 public class Planet implements Serializable {
-    private String name, mass, temp;
+    private String name, mass, gravity;
     private int picture;
 
     public static String KEY_PLANET = "KEY_PLANET";
 
-    public Planet(String name, String mass, String temp, int picture) {
+    public Planet(String name, String mass, String gravity, int picture) {
         this.name = name;
         this.mass = mass;
-        this.temp = temp;
+        this.gravity = gravity;
         this.picture = picture;
     }
 
@@ -29,8 +29,8 @@ public class Planet implements Serializable {
         return mass;
     }
 
-    public String getTemp() {
-        return temp;
+    public String getGravity() {
+        return gravity;
     }
 
     public int getPicture() {

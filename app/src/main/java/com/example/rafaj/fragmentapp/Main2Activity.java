@@ -36,7 +36,7 @@ public class Main2Activity extends AppCompatActivity {
         if (txt_name != null && txt_mass != null && txt_gravity != null && image != null){
             txt_name.setText(planet.getName());
             txt_mass.setText(planet.getMass() + "\n" + getResources().getString(R.string.mass_units));
-            txt_gravity.setText(planet.getTemp() + "\n" + getResources().getString(R.string.gravity_units));
+            txt_gravity.setText(planet.getGravity() + "\n" + getResources().getString(R.string.gravity_units));
             image.setImageResource(planet.getPicture());
         }
     }
